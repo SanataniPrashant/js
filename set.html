@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+    // let y=setInterval(() => {console.log("hello")}, 1000)
+    // clearInterval(y)
+    // setTimeout(()=>clearInterval(y),5000)
+
+
+
+    // let u = new Date(); // here Date is constructur and constructur is a function  so we can use it as an object also and it is called automatically
+    // console.log(u);
+    // console.log(u.toLocaleTimeString());
+    // console.log(u.toLocaleDateString());
+    // console.log(u.toISOString());
+    // console.log(u.toLocaleString());
+
+   //used to display current time
+    setInterval(()=>{
+        let a = new Date();
+        let c = a.toLocaleDateString();
+        let b = a.toLocaleTimeString();
+        console.log(c,b);
+        document.write(c,b);
+    },5000)
+
+    </script>
+</body>
+</html>

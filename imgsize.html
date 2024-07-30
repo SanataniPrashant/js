@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+       #h{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 50px;
+       }
+       #k{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 250px;
+        left: 700px;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <img width="200px" height="200px" src="https://tse4.mm.bing.net/th?id=OIP.EDmIdtQ0OMV3z3c7mXU1DAHaEK&pid=Api&P=0&h=180" alt="Foto de perfil">
+        <div id="k">
+        <button onclick="inc()">Inc</button>
+        <h1 id="count">0</h1>
+        <button onclick="dec()">Dec</button>
+        </div>
+        <div id="h">
+
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <div id="count1">0</div>
+            <div id="price">$0</div>
+        </div>
+        
+    </center>
+
+
+    <script>
+     let c = document.getElementById("count");
+     let d = document.getElementById("count1");
+     let p = document.getElementById("price");
+     let v=0;
+     
+     function  inc()
+     {   
+        v++;
+        c.innerHTML=v;
+        d.innerHTML=v;
+        p.innerHTML='$'+(200*v);
+     }
+     function  dec()
+     {  
+        if(v!=0) {
+        v--;
+        c.innerHTML=v;
+        d.innerHTML=v;
+        p.innerHTML='$'+((200*v));
+        } 
+     }
+    </script>
+
+</body>
+</html>

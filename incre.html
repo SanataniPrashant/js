@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="count">0</h1>
+        <button onclick="inc()">Inc</button>
+        <button onclick="dec()">Dec</button>
+    </center>
+
+
+    <script>
+     let c = document.getElementById("count");
+     let v=0;
+     
+     function  inc()
+     {   
+        v++;
+        c.innerHTML=v;
+     }
+     function  dec()
+     {  
+        if(v!=0) {
+        v--;
+        c.innerHTML=v;
+        }
+        
+       
+     }
+    </script>
+</body>
+</html>
